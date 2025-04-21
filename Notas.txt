@@ -1,0 +1,12 @@
+'''
+resp1 = "0010"
+resp2 = "0100"
+resp3 = "0110"
+
+num1 = input("Adivine primer valor binario respetando el formato de 4 bits: ")
+while num1 != resp1 :
+    if len(num1) != 4 :
+        print("Error, no se está respetando el formato de 4 bits, intente de nuevo.")
+    elif num1 num1 
+    num1 = input("Adivine primer valor binario respetando el formato de 4 bits: ")
+'''
