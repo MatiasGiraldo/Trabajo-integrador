@@ -31,5 +31,5 @@ while num1 != respuesta_correcta:
     else:
         print("INCORRECTO, por favor vuelva a intentarlo.")
         num1 = input("Adivine qué valor debe tener A y luego ingrese el número que forman ABCD en binario respetando el formato de 4 bits: ")
-print(f"CORRECTO, la respuesta es {respuesta_correcta}.")
+print(f"CORRECTO, la respuesta es {respuesta_correcta}(recuerde este número para el último nivel del juego).")
 print("Puede avanzar al siguiente nivel.")
