@@ -6,17 +6,15 @@ print("En este juego pondremos a prueba sus conocimientos en Álgebra de Boole y
 #Adivinanza 1
 print(""" 
 Nivel 1:
-Tenemos cuatro Interruptores A, B, C, D, que al combinarlos abren una puerta...
-
+Tenemos cuatro Interruptores A, B, C, D, que al combinarlos abren una puerta...\n
 Se sabe que:
 - A = ?
 - B = 1
 - C = 1
-- D = 0
-
+- D = 0\n
 La puerta se abre si:
 → (A OR B) AND NOT C AND NOT D
-""")
+    """)
 
 #Se pide al usuario que ingrese su respuesta
 num1 = input("Adivine qué valor debe tener A y luego ingrese el número que forman ABCD en binario respetando el formato de 4 bits: ")
@@ -63,7 +61,6 @@ num3 = input("Adivine el numero en binario (4 bits), se dara una ayuda en cada i
 lista_respuestas_3 = ["0000", "0001", "0010", "0011", "0100", "0101", "0110", "0111", "1000", "1001", "1010", "1011", "1100", "1101", "1110", "1111"]
 # Se elige un elemento al azar de la lista
 respuesta_correcta3 = random.choice(lista_respuestas_3)
-print(respuesta_correcta3)
 #Bucle que retiene al usuario si se equivoca en la respuesta
 while num3 != respuesta_correcta3:
     if not all(bit in "01" for bit in num1):
@@ -86,9 +83,9 @@ print("Puede avanzar al siguiente nivel. \n")
 
 # PARTE DE LA SUMA
 #Ingresar el resultado en decimal
-print("Sume los números que obtuvo de cada adivinanza e ingrese el resultado en sistema decimal.")
+print("Sume los números que obtuvo de cada adivinanza e ingrese el resultado en sistema decimal.\n")
 print(f"Recuerde que... \nnumero 1: {respuesta_correcta1} \nnumero 2: 1001 \nnumero 3: {respuesta_correcta3}")
-suma = input("Ingrese su respuesta: ")
+suma = input("Ingrese su respuesta en decimal: ")
 # Suma de los numeros adivinados
 suma_correcta = int("0110", 2) + int("1001", 2) + int(respuesta_correcta3, 2) 
 # Bucle que permite más intentos al usuario en caso de haber escrito mal la respuesta de la suma
@@ -99,14 +96,14 @@ while not correcto:
         if suma < 0:
             print("Error, ha ingresado un número negativo, vuelva a intentarlo")
         elif suma != suma_correcta:
-            print("Incorrecto, vuelva a intentarlo")
+            print("Incorrecto, vuelva a intentarlo \n")
         else:
             print("¡Correcto!")
             correcto = True  # Se sale del bucle
     except ValueError: #se ejecuta si no se pudo hacer int(suma) por tenes algun caracter
-        print("Error, ha ingresado un carácter, vuelva a intentarlo")
+        print("Error, ha ingresado un carácter, vuelva a intentarlo \n")
     if not correcto: #Pide al usuario que ingrese respuesta si anteriormente le salto error o ingreso incorrectamente.
-        suma = input("Ingrese su respuesta: ")
+        suma = input("Ingrese su respuesta en decimal: ")
     cont +=1
 print("¡Felicidades, lograste superar cada prueba que se te puso, bien hecho!")
 print(f"Lo lograste en {cont} intentos en total.")
