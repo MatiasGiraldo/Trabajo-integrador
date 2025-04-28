@@ -1,16 +1,7 @@
+Respuestas de la adivinanzas:
+0110 = 6
+1001 = 9
+(random) = ?
 
-
-
-'''
-resp1 = "0010"
-resp2 = "0100"
-resp3 = "0110"
-
-num1 = input("Adivine primer valor binario respetando el formato de 4 bits: ")
-while num1 != resp1 :
-    if len(num1) != 4 :
-        print("Error, no se está respetando el formato de 4 bits, intente de nuevo.")
-    elif num1 num1 
-    num1 = input("Adivine primer valor binario respetando el formato de 4 bits: ")
-'''
-
+Suma = 6 + 9 + random
+Termina programa si es correcto.
