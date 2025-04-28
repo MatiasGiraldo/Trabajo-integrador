@@ -1,5 +1,5 @@
-# Juego de adivinanzas en Python
 import random
+# Juego de adivinanzas en Python
 print("                      JUEGO DE ADIVINANZAS")
 print("En este juego pondremos a prueba sus conocimientos en Álgebra de Boole y el Sistema Binario.")
 
@@ -55,7 +55,7 @@ print(f"CORRECTO, la respuesta es {respuesta_correcta2}.")
 print("Puede avanzar al siguiente nivel. \n")
 
 #Adivinanza 3
-print("Nivel 3: \n Aleatoriedad ")
+print("Nivel 3: \n Aleatoriedad binaria ")
 num3 = input("Adivine el numero en binario (4 bits), se dara una ayuda en cada intento: ")
 # creación de lista de todos los numeros binarios de 4 bits
 lista_respuestas_3 = ["0000", "0001", "0010", "0011", "0100", "0101", "0110", "0111", "1000", "1001", "1010", "1011", "1100", "1101", "1110", "1111"]
@@ -82,10 +82,11 @@ print(f"CORRECTO, la respuesta es {respuesta_correcta3}.")
 print("Puede avanzar al siguiente nivel. \n")
 
 # PARTE DE LA SUMA
+print("Nivel 4:  Suma ")
 #Ingresar el resultado en decimal
 print("Sume los números que obtuvo de cada adivinanza e ingrese el resultado en sistema decimal.\n")
 print(f"Recuerde que... \nnumero 1: {respuesta_correcta1} \nnumero 2: 1001 \nnumero 3: {respuesta_correcta3}")
-suma = input("Ingrese su respuesta en decimal: ")
+suma = input("Ingrese la respuesta en decimal: ")
 # Suma de los numeros adivinados
 suma_correcta = int("0110", 2) + int("1001", 2) + int(respuesta_correcta3, 2) 
 # Bucle que permite más intentos al usuario en caso de haber escrito mal la respuesta de la suma
@@ -103,7 +104,7 @@ while not correcto:
     except ValueError: #se ejecuta si no se pudo hacer int(suma) por tenes algun caracter
         print("Error, ha ingresado un carácter, vuelva a intentarlo \n")
     if not correcto: #Pide al usuario que ingrese respuesta si anteriormente le salto error o ingreso incorrectamente.
-        suma = input("Ingrese su respuesta en decimal: ")
+        suma = input("Ingrese la respuesta en decimal: ")
     cont +=1
 print("¡Felicidades, lograste superar cada prueba que se te puso, bien hecho!")
 print(f"Lo lograste en {cont} intentos en total.")
