@@ -63,7 +63,7 @@ lista_respuestas_3 = ["0000", "0001", "0010", "0011", "0100", "0101", "0110", "0
 respuesta_correcta3 = random.choice(lista_respuestas_3)
 #Bucle que retiene al usuario si se equivoca en la respuesta
 while num3 != respuesta_correcta3:
-    if not all(bit in "01" for bit in num1):
+    if not all(bit in "01" for bit in num3):
         print("Error. Solo se permiten dígitos binarios (0 y 1). Por favor vuelva a intentarlo.")
         num3 = input("Adivine el numero en binario (4 bits): ")
     elif len(num3) != 4:
