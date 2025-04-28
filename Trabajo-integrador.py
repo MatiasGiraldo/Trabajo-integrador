@@ -55,12 +55,19 @@ print(f"CORRECTO, la respuesta es {respuesta_correcta2}.")
 print("Puede avanzar al siguiente nivel. \n")
 
 #Adivinanza 3
+import random
+
 print("Nivel 3: \n Aleatoriedad binaria ")
 num3 = input("Adivine el numero en binario (4 bits), se dara una ayuda en cada intento: ")
+
 # creación de lista de todos los numeros binarios de 4 bits
 lista_respuestas_3 = ["0000", "0001", "0010", "0011", "0100", "0101", "0110", "0111", "1000", "1001", "1010", "1011", "1100", "1101", "1110", "1111"]
+
 # Se elige un elemento al azar de la lista
 respuesta_correcta3 = random.choice(lista_respuestas_3)
+
+#Contador de Intentos
+cont=1
 #Bucle que retiene al usuario si se equivoca en la respuesta
 while num3 != respuesta_correcta3:
     if not all(bit in "01" for bit in num3):
@@ -80,6 +87,7 @@ while num3 != respuesta_correcta3:
 cont +=1
 print(f"CORRECTO, la respuesta es {respuesta_correcta3}.")
 print("Puede avanzar al siguiente nivel. \n")
+
 
 # PARTE DE LA SUMA
 print("Nivel 4:  Suma ")
